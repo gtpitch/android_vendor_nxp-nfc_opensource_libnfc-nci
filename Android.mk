@@ -66,6 +66,9 @@ endif
 ifeq ($(strip $(NQ3XX_PRESENT)),true)
 NXP_CHIP_TYPE := $(PN553)
 else
+ifeq ($(BOARD_NFC_CHIPSET),pn547)
+NXP_CHIP_TYPE := $(PN547C2)
+else
 NXP_CHIP_TYPE := $(PN548C2)
 endif
 

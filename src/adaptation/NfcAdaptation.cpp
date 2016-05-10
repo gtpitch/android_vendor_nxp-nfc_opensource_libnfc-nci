@@ -362,7 +362,7 @@ void NfcAdaptation::InitializeHalDeviceContext ()
     {
 #if(NXP_EXTNS == TRUE)
     ALOGE("No HAL module specified in config, falling back to nqx");
-    strlcpy (nci_hal_module, "nfc_nci.nqx", sizeof(nci_hal_module));
+    strlcpy (nci_hal_module, "nfc_nci.pn54x", sizeof(nci_hal_module));
 #else
     ALOGE("No HAL module specified in config, falling back to BCM2079x");
     strlcpy (nci_hal_module, "nfc_nci.bcm2079x", sizeof(nci_hal_module));
